@@ -17,6 +17,16 @@ public class Usuario {
     private int tarjetaUsuario;
     private int usuarioID;
     private Lista listaJuegoUsuario;
+    private Pila carrito;
+
+    
+    public Pila getCarrito() {
+        return carrito;
+    }
+
+    public void setCarrito(Pila Carrito) {
+        this.carrito = carrito;
+    }
     
     public String getContraseñaUsuario() {
         return contraseñaUsuario;
@@ -64,6 +74,7 @@ public class Usuario {
         this.contraseñaUsuario = contraseñaUsuario;
         this.usuarioID = usuarioID;
         this.listaJuegoUsuario = new Lista ();
+        this.carrito = new Pila ();
     }
 
     public Lista getListaJuegoUsuario() {
