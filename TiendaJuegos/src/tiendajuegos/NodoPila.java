@@ -12,10 +12,10 @@ package tiendajuegos;
 public class NodoPila {
  private NodoPila abajo;
  private int idPila;
- private Orden orden;
+ private Juego juego;
 
-    public NodoPila(Orden orden) {
-        this.orden = orden;
+    public NodoPila(Juego juego) {
+        this.juego = juego;
     }
 
     
@@ -37,17 +37,17 @@ public class NodoPila {
         this.idPila = idPila;
     }
 
-    public Orden getOrden() {
-        return orden;
+    public Juego getJuego() {
+        return juego;
     }
 
-    public void setOrden(Orden orden) {
-        this.orden = orden;
+    public void setJuego(Juego juego) {
+        this.juego = juego;
     }
 
     @Override
     public String toString() {
-        return "" + orden;
+        return "" + juego.toString;
     }
  
 }
